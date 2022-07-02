@@ -6,7 +6,7 @@
 /*   By: wboutzou <wboutzou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/29 22:47:56 by wboutzou          #+#    #+#             */
-/*   Updated: 2022/07/01 01:34:48 by wboutzou         ###   ########.fr       */
+/*   Updated: 2022/07/02 21:40:55 by wboutzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	printlist(t_node *head)
 	tmp = head;
 	while (tmp)
 	{
-		printf("%d\n",tmp->value);
+		printf("%d\n", tmp->value);
 		tmp = tmp->next;
 	}
 }

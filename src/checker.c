@@ -6,7 +6,7 @@
 /*   By: wboutzou <wboutzou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/29 22:32:09 by wboutzou          #+#    #+#             */
-/*   Updated: 2022/07/01 03:07:15 by wboutzou         ###   ########.fr       */
+/*   Updated: 2022/07/02 21:39:59 by wboutzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,7 +79,7 @@ int	checkarg(char **argv, int argc)
 	{
 		j = i - 1;
 		if (!is_number(argv[i]))
-			return (0);  
+			return (0);
 		ft_cosatoi(argv[i]);
 		while (j >= 1)
 		{
@@ -100,7 +100,7 @@ int	nsorted(t_sort	*push, t_node **a)
 	ft_memcpy(push->sorted, push->tab, push->size * sizeof(int));
 	bulle(push->sorted, push->size);
 	push->i = 0;
-	while (push->sorted[push->i] == push->tab[push->i])
+	while (push->sorted[push->i] == push->tab[push->i] && push->i < push->size)
 		push->i++;
 	if (push->i == push->size)
 		return (0);

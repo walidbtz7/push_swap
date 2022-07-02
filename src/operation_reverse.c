@@ -6,7 +6,7 @@
 /*   By: wboutzou <wboutzou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/29 13:16:46 by wboutzou          #+#    #+#             */
-/*   Updated: 2022/07/01 21:59:31 by wboutzou         ###   ########.fr       */
+/*   Updated: 2022/07/02 18:29:08 by wboutzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	reverse_rotate(t_node **head)
 	t_node	*tmp;
 	t_node	*last;
 
-	if (*head == NULL)
+	if (ft_lstsize(*head) <= 1)
 		return ;
 	tmp = *head;
 	while (tmp->next->next != NULL)

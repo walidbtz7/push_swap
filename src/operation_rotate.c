@@ -6,7 +6,7 @@
 /*   By: wboutzou <wboutzou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/29 13:16:46 by wboutzou          #+#    #+#             */
-/*   Updated: 2022/07/01 22:05:05 by wboutzou         ###   ########.fr       */
+/*   Updated: 2022/07/02 18:28:45 by wboutzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	rotate(t_node **head)
 	t_node	*first;
 	t_node	*tmp;
 
-	if (*head == NULL)
+	if (ft_lstsize(*head) <= 1)
 		return ;
 	first = *head;
 	*head = (*head)->next;

@@ -6,7 +6,7 @@
 /*   By: wboutzou <wboutzou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/29 23:40:50 by wboutzou          #+#    #+#             */
-/*   Updated: 2022/07/01 18:09:14 by wboutzou         ###   ########.fr       */
+/*   Updated: 2022/07/02 19:21:04 by wboutzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,8 +91,7 @@ void	ft_b_to_a(t_node **a, t_node **b, t_sort *push)
 {
 	push->i = 1;
 	push->down = 0;
-	push->max = 0;
-	while (ft_lstsize(*b) > 0)
+	while (ft_lstsize(*b))
 	{
 		push->max = push->size - push->i;
 		if (existsinttack(b, push->sorted[push->max]))

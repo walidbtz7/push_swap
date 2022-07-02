@@ -6,7 +6,7 @@
 /*   By: wboutzou <wboutzou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/29 13:16:46 by wboutzou          #+#    #+#             */
-/*   Updated: 2022/06/29 22:47:16 by wboutzou         ###   ########.fr       */
+/*   Updated: 2022/07/02 18:30:16 by wboutzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	putfirst(t_node **src, t_node **dst)
 {
 	t_node	*tmp;
 
-	if (*src == NULL)
+	if (!ft_lstsize(*src))
 		return ;
 	tmp = *src;
 	*src = (*src)->next;
