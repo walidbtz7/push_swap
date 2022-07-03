@@ -1,36 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.c                                        :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wboutzou <wboutzou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/29 22:25:51 by wboutzou          #+#    #+#             */
-/*   Updated: 2022/07/03 02:13:35 by wboutzou         ###   ########.fr       */
+/*   Created: 2022/06/26 18:45:28 by wboutzou          #+#    #+#             */
+/*   Updated: 2022/06/26 20:52:02 by wboutzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "helpers.h"
 
-int	main(int argc, char **argv)
+int	ft_strcmp(char	*s1, char	*s2)
 {
-	t_node	*a;
-	t_node	*b;
-	t_sort	push;
+	int	i;
 
-	if (argc > 2)
+	i = 0;
+	while (s1[i] != '\0' && s2[i] != '\0' && s1[i] == s2[i])
 	{
-		a = NULL;
-		b = NULL;
-		if (checkarg(argv, argc))
-		{
-			create_stack(argv, argc, &a);
-			if (!nsorted(&push, &a))
-				return (0);
-			sort(&a, &b, &push);
-		}
-		else
-			ft_printf("Error\n");
+		i++;
 	}
-	return (0);
+	return (s1[i] - s2[i]);
 }

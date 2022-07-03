@@ -1,36 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.c                                        :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wboutzou <wboutzou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/29 22:25:51 by wboutzou          #+#    #+#             */
-/*   Updated: 2022/07/03 02:13:35 by wboutzou         ###   ########.fr       */
+/*   Created: 2022/06/26 20:51:35 by wboutzou          #+#    #+#             */
+/*   Updated: 2022/06/26 20:51:48 by wboutzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "helpers.h"
 
-int	main(int argc, char **argv)
+char	*ft_strchr(char *s, int c)
 {
-	t_node	*a;
-	t_node	*b;
-	t_sort	push;
+	char	*str;
 
-	if (argc > 2)
+	str = (char *) s;
+	if (!s)
+		return (0);
+	while (*str != '\0')
 	{
-		a = NULL;
-		b = NULL;
-		if (checkarg(argv, argc))
-		{
-			create_stack(argv, argc, &a);
-			if (!nsorted(&push, &a))
-				return (0);
-			sort(&a, &b, &push);
-		}
-		else
-			ft_printf("Error\n");
+		if (*str == (char) c)
+			return (str);
+		str++;
 	}
-	return (0);
+	return (NULL);
 }

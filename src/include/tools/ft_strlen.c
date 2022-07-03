@@ -1,36 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.c                                        :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wboutzou <wboutzou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/29 22:25:51 by wboutzou          #+#    #+#             */
-/*   Updated: 2022/07/03 02:13:35 by wboutzou         ###   ########.fr       */
+/*   Created: 2021/11/24 18:07:13 by wboutzou          #+#    #+#             */
+/*   Updated: 2022/07/03 02:13:15 by wboutzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "helpers.h"
 
-int	main(int argc, char **argv)
+size_t	ft_strlen(const char *str)
 {
-	t_node	*a;
-	t_node	*b;
-	t_sort	push;
+	size_t	c;
 
-	if (argc > 2)
+	c = 0;
+	while (str[c] != '\0')
 	{
-		a = NULL;
-		b = NULL;
-		if (checkarg(argv, argc))
-		{
-			create_stack(argv, argc, &a);
-			if (!nsorted(&push, &a))
-				return (0);
-			sort(&a, &b, &push);
-		}
-		else
-			ft_printf("Error\n");
+		c++;
 	}
-	return (0);
+	return (c);
 }

@@ -1,36 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wboutzou <wboutzou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/29 22:25:51 by wboutzou          #+#    #+#             */
-/*   Updated: 2022/07/03 02:13:35 by wboutzou         ###   ########.fr       */
+/*   Created: 2021/11/24 18:06:28 by wboutzou          #+#    #+#             */
+/*   Updated: 2022/06/26 20:52:05 by wboutzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "helpers.h"
 
-int	main(int argc, char **argv)
+char	*ft_strdup(const	char *s1)
 {
-	t_node	*a;
-	t_node	*b;
-	t_sort	push;
+	size_t	i;
+	char	*p;
 
-	if (argc > 2)
-	{
-		a = NULL;
-		b = NULL;
-		if (checkarg(argv, argc))
-		{
-			create_stack(argv, argc, &a);
-			if (!nsorted(&push, &a))
-				return (0);
-			sort(&a, &b, &push);
-		}
-		else
-			ft_printf("Error\n");
-	}
-	return (0);
+	i = ft_strlen(s1) + 1;
+	p = (char *) malloc(i);
+	if (p == NULL)
+		return (NULL);
+	ft_memcpy(p, s1, i);
+	return (p);
 }

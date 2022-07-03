@@ -1,36 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wboutzou <wboutzou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/29 22:25:51 by wboutzou          #+#    #+#             */
-/*   Updated: 2022/07/03 02:13:35 by wboutzou         ###   ########.fr       */
+/*   Created: 2021/11/24 18:07:43 by wboutzou          #+#    #+#             */
+/*   Updated: 2022/06/26 18:45:47 by wboutzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "helpers.h"
 
-int	main(int argc, char **argv)
+char	*ft_strrchr(const	char *s, int c)
 {
-	t_node	*a;
-	t_node	*b;
-	t_sort	push;
+	int	i;
 
-	if (argc > 2)
+	i = ft_strlen(s);
+	while (s[i] != (char)c)
 	{
-		a = NULL;
-		b = NULL;
-		if (checkarg(argv, argc))
+		if (s[i] != c && i == 0)
 		{
-			create_stack(argv, argc, &a);
-			if (!nsorted(&push, &a))
-				return (0);
-			sort(&a, &b, &push);
+			return (NULL);
 		}
-		else
-			ft_printf("Error\n");
+		i--;
 	}
-	return (0);
+	return ((char *)(s + i));
 }

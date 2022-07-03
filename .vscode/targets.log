@@ -8,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Sat Jul  2 20:11:11 2022
+# Make data base, printed on Sat Jul  2 23:54:57 2022
 
 # Variables
 
@@ -39,11 +39,11 @@ VSCODE_VERBOSE_LOGGING = true
 # makefile (from `Makefile', line 4)
 OBJS = $(SRCS:.c=.o)
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/zz/zyxvpxvq6csfxvn_n0000hqr00045y/T/vscode-ipc-dbacb869-140f-41fe-9035-1d7033dffd50.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/zz/zyxvpxvq6csfxvn_n0000hqr00045y/T/vscode-ipc-b0759979-b3d5-4aa6-adb4-1f1324602bbb.sock
 # environment
 VSCODE_CWD = /
 # environment
-Apple_PubSub_Socket_Render = /private/tmp/com.apple.launchd.6NkZoocKVt/Render
+Apple_PubSub_Socket_Render = /private/tmp/com.apple.launchd.BSyfM95b44/Render
 # environment
 PATH = /usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 # environment
@@ -51,9 +51,10 @@ VSCODE_LOG_STACK = false
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # default
+ 
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.fDhbnVa4N2/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.jPIapUO0md/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -85,7 +86,7 @@ MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
 # makefile (from `Makefile', line 1)
-SRCS = ./src/checker.c ./src/helpers.c ./src/table.c ./src/sort_under_fifteen.c  ./src/sort.c ./src/linkedlist.c ./src/operation_reverse.c ./src/operation_swap.c ./src/operation_rotate.c ./src/operation_push.c ./src/a_to_b.c ./src/b_to_a.c ./src/push_swap.c  
+SRCS = ./src/checker.c ./src/helpers.c ./src/table.c ./src/sort_under_fifteen.c  ./src/sort.c ./src/linkedlist.c ./src/operation_reverse.c ./src/operation_swap.c ./src/operation_rotate.c ./src/operation_push.c ./src/a_to_b.c ./src/b_to_a.c ./src/push_swap.c ./src/include/get_next_line/get_next_line.c ./src/include/get_next_line/get_next_line_utils.c 
 # environment
 SHLVL = 1
 # default
@@ -115,7 +116,7 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = com.apple.xpc.launchd.oneshot.0x10000001.Electron
+XPC_SERVICE_NAME = com.apple.xpc.launchd.oneshot.0x1000000e.Electron
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # automatic
@@ -133,7 +134,7 @@ PRINTF = ./src/include/ft_printf/libftprintf.a
 # environment
 LC_ALL = C
 # environment
-SECURITYSESSIONID = 186a8
+SECURITYSESSIONID = 18701
 # automatic
 ^F = $(notdir $^)
 # default
@@ -147,9 +148,9 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 3952
+VSCODE_PID = 53321
 # variable set hash-table stats:
-# Load=68/1024=7%, Rehash=0, Collisions=3/98=3%
+# Load=68/1024=7%, Rehash=0, Collisions=3/101=3%
 
 # Pattern-specific Variable Values
 
@@ -157,10 +158,11 @@ VSCODE_PID = 3952
 
 # Directories
 
-# . (device 16777227, inode 9605386): 12 files, no impossibilities.
-# src (device 16777227, inode 9605470): 29 files, no impossibilities so far.
+# . (device 16777227, inode 9605386): 11 files, no impossibilities.
+# src/include/get_next_line (device 16777227, inode 9902739): 4 files, no impossibilities so far.
+# src (device 16777227, inode 9605470): 30 files, no impossibilities so far.
 
-# 41 files, no impossibilities in 2 directories.
+# 45 files, no impossibilities in 3 directories.
 
 # Implicit Rules
 
@@ -176,7 +178,7 @@ VSCODE_PID = 3952
 src/operation_reverse.o: src/operation_reverse.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: `src/operation_reverse'
-#  Last modified 2022-07-02 19:24:05
+#  Last modified 2022-07-02 23:54:41
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -197,7 +199,7 @@ src/operation_rotate.c:
 src/sort.o: src/sort.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: `src/sort'
-#  Last modified 2022-07-02 19:24:05
+#  Last modified 2022-07-02 23:54:41
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -209,7 +211,7 @@ src/sort.o: src/sort.c
 src/push_swap.o: src/push_swap.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: `src/push_swap'
-#  Last modified 2022-07-02 19:24:05
+#  Last modified 2022-07-02 23:54:41
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -224,14 +226,14 @@ all: push_swap
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
 # variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
 
 src/sort_under_fifteen.o: src/sort_under_fifteen.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: `src/sort_under_fifteen'
-#  Last modified 2022-07-02 19:24:05
+#  Last modified 2022-07-02 23:54:41
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -239,6 +241,12 @@ src/sort_under_fifteen.o: src/sort_under_fifteen.c
 #  commands to execute (from `Makefile', line 19):
 	cc $(FLAGS) -c $< -o $@
 	
+
+# Not a target:
+src/include/get_next_line/get_next_line_utils.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 .PHONY: all clean fclean re bonus
 #  Implicit rule search has not been done.
@@ -248,7 +256,7 @@ src/sort_under_fifteen.o: src/sort_under_fifteen.c
 src/table.o: src/table.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: `src/table'
-#  Last modified 2022-07-02 19:24:05
+#  Last modified 2022-07-02 23:54:41
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -266,7 +274,7 @@ src/table.o: src/table.c
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-01 03:11:47
+#  Last modified 2022-07-02 23:54:38
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -275,7 +283,7 @@ Makefile:
 src/b_to_a.o: src/b_to_a.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: `src/b_to_a'
-#  Last modified 2022-07-02 19:24:05
+#  Last modified 2022-07-02 23:54:41
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -287,7 +295,7 @@ src/b_to_a.o: src/b_to_a.c
 # Not a target:
 src/linkedlist.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-01 01:34:48
+#  Last modified 2022-07-02 21:40:55
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -296,7 +304,7 @@ src/linkedlist.c:
 src/helpers.o: src/helpers.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: `src/helpers'
-#  Last modified 2022-07-02 19:24:05
+#  Last modified 2022-07-02 23:54:41
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -307,9 +315,8 @@ src/helpers.o: src/helpers.c
 
 src/checker.o: src/checker.c
 #  Implicit rule search has been done.
- 
 #  Implicit/static pattern stem: `src/checker'
-#  Last modified 2022-07-02 19:24:05
+#  Last modified 2022-07-02 23:54:40
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -330,16 +337,17 @@ src/operation_reverse.c:
 # Not a target:
 src/sort.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-02 19:03:17
+#  Last modified 2022-07-02 21:20:54
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
+ 
 src/a_to_b.o: src/a_to_b.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: `src/a_to_b'
-#  Last modified 2022-07-02 19:24:05
+#  Last modified 2022-07-02 23:54:41
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -351,7 +359,7 @@ src/a_to_b.o: src/a_to_b.c
 src/operation_push.o: src/operation_push.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: `src/operation_push'
-#  Last modified 2022-07-02 19:24:05
+#  Last modified 2022-07-02 23:54:41
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -363,7 +371,7 @@ src/operation_push.o: src/operation_push.c
 # Not a target:
 src/push_swap.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-01 06:49:30
+#  Last modified 2022-07-02 21:30:18
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -372,7 +380,7 @@ src/push_swap.c:
 # Not a target:
 src/sort_under_fifteen.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-01 20:34:02
+#  Last modified 2022-07-02 21:30:04
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -394,10 +402,38 @@ fclean: clean
 	@rm -f ${NAME}
 	
 
+src/include/get_next_line/get_next_line.o: src/include/get_next_line/get_next_line.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `src/include/get_next_line/get_next_line'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := src/include/get_next_line/get_next_line.o
+# automatic
+# % := 
+# automatic
+# * := src/include/get_next_line/get_next_line
+# automatic
+# + := src/include/get_next_line/get_next_line.c
+# automatic
+# | := 
+# automatic
+# < := src/include/get_next_line/get_next_line.c
+# automatic
+# ^ := src/include/get_next_line/get_next_line.c
+# automatic
+# ? := src/include/get_next_line/get_next_line.c
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/13=8%
+#  commands to execute (from `Makefile', line 19):
+	cc $(FLAGS) -c $< -o $@
+	
+
 # Not a target:
 src/table.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-30 21:14:54
+#  Last modified 2022-07-02 21:20:21
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -412,7 +448,7 @@ src/table.c:
 src/operation_swap.o: src/operation_swap.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: `src/operation_swap'
-#  Last modified 2022-07-02 19:24:05
+#  Last modified 2022-07-02 23:54:41
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -439,7 +475,7 @@ re: fclean all
 src/operation_rotate.o: src/operation_rotate.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: `src/operation_rotate'
-#  Last modified 2022-07-02 19:24:05
+#  Last modified 2022-07-02 23:54:41
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -461,7 +497,7 @@ clean:
 # Not a target:
 src/helpers.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-01 01:33:15
+#  Last modified 2022-07-02 21:40:12
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -470,19 +506,19 @@ src/helpers.c:
 # Not a target:
 src/checker.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-01 03:07:15
+#  Last modified 2022-07-02 21:39:59
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-push_swap: src/include/ft_printf/libftprintf.a src/checker.o src/helpers.o src/table.o src/sort_under_fifteen.o src/sort.o src/linkedlist.o src/operation_reverse.o src/operation_swap.o src/operation_rotate.o src/operation_push.o src/a_to_b.o src/b_to_a.o src/push_swap.o
+push_swap: src/include/ft_printf/libftprintf.a src/checker.o src/helpers.o src/table.o src/sort_under_fifteen.o src/sort.o src/linkedlist.o src/operation_reverse.o src/operation_swap.o src/operation_rotate.o src/operation_push.o src/a_to_b.o src/b_to_a.o src/push_swap.o src/include/get_next_line/get_next_line.o src/include/get_next_line/get_next_line_utils.o
 #  Implicit rule search has not been done.
-#  Last modified 2022-07-02 19:24:05
+#  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
 # variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
 #  commands to execute (from `Makefile', line 14):
 	cc $(FLAGS) $(OBJS) $(PRINTF) -o $(NAME)
 	
@@ -505,9 +541,18 @@ src/operation_push.c:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
+# Not a target:
+src/include/get_next_line/get_next_line.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-02 23:51:59
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
 src/include/ft_printf/libftprintf.a:
 #  Implicit rule search has not been done.
-#  Last modified 2022-07-02 19:24:05
+#  Last modified 2022-07-02 23:54:40
 #  File has been updated.
 #  Successfully updated.
 #  commands to execute (from `Makefile', line 17):
@@ -526,7 +571,7 @@ src/operation_swap.c:
 src/linkedlist.o: src/linkedlist.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: `src/linkedlist'
-#  Last modified 2022-07-02 19:24:05
+#  Last modified 2022-07-02 23:54:41
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -536,7 +581,7 @@ src/linkedlist.o: src/linkedlist.c
 	
 
 # files hash-table stats:
-# Load=37/1024=4%, Rehash=0, Collisions=0/112=0%
+# Load=40/1024=4%, Rehash=0, Collisions=0/120=0%
 # VPATH Search Paths
 
 # No `vpath' search paths.
@@ -548,6 +593,6 @@ src/linkedlist.o: src/linkedlist.c
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Sat Jul  2 20:11:11 2022
+# Finished Make data base on Sat Jul  2 23:54:57 2022
 
  

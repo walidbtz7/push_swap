@@ -1,36 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.c                                        :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wboutzou <wboutzou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/29 22:25:51 by wboutzou          #+#    #+#             */
-/*   Updated: 2022/07/03 02:13:35 by wboutzou         ###   ########.fr       */
+/*   Created: 2021/11/24 18:05:07 by wboutzou          #+#    #+#             */
+/*   Updated: 2022/06/26 22:42:23 by wboutzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "helpers.h"
 
-int	main(int argc, char **argv)
+void	*ft_memcpy(void *dst, const	void *src, size_t n)
 {
-	t_node	*a;
-	t_node	*b;
-	t_sort	push;
+	size_t	i;
+	char	*d;
+	char	*s;
 
-	if (argc > 2)
+	i = 0;
+	d = (char *) dst;
+	s = (char *) src;
+	if (!d && !s)
+		return (0);
+	while (i < n)
 	{
-		a = NULL;
-		b = NULL;
-		if (checkarg(argv, argc))
-		{
-			create_stack(argv, argc, &a);
-			if (!nsorted(&push, &a))
-				return (0);
-			sort(&a, &b, &push);
-		}
-		else
-			ft_printf("Error\n");
+		d[i] = s[i];
+		i++;
 	}
-	return (0);
+	return (dst);
 }

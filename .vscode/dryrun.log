@@ -1,19 +1,7 @@
-make --dry-run --always-make --keep-going --print-directory
+make --dry-run --keep-going --print-directory
 make: Entering directory `/Users/wboutzou/Desktop/push_swap_final'
-make -C ./src/include/ft_printf
-cc -Wall -Wextra -Werror  -c src/checker.c -o src/checker.o
-cc -Wall -Wextra -Werror  -c src/helpers.c -o src/helpers.o
-cc -Wall -Wextra -Werror  -c src/table.c -o src/table.o
-cc -Wall -Wextra -Werror  -c src/sort_under_fifteen.c -o src/sort_under_fifteen.o
-cc -Wall -Wextra -Werror  -c src/sort.c -o src/sort.o
-cc -Wall -Wextra -Werror  -c src/linkedlist.c -o src/linkedlist.o
-cc -Wall -Wextra -Werror  -c src/operation_reverse.c -o src/operation_reverse.o
-cc -Wall -Wextra -Werror  -c src/operation_swap.c -o src/operation_swap.o
-cc -Wall -Wextra -Werror  -c src/operation_rotate.c -o src/operation_rotate.o
-cc -Wall -Wextra -Werror  -c src/operation_push.c -o src/operation_push.o
-cc -Wall -Wextra -Werror  -c src/a_to_b.c -o src/a_to_b.o
-cc -Wall -Wextra -Werror  -c src/b_to_a.c -o src/b_to_a.o
-cc -Wall -Wextra -Werror  -c src/push_swap.c -o src/push_swap.o
-cc -Wall -Wextra -Werror  ./src/checker.o ./src/helpers.o ./src/table.o ./src/sort_under_fifteen.o ./src/sort.o ./src/linkedlist.o ./src/operation_reverse.o ./src/operation_swap.o ./src/operation_rotate.o ./src/operation_push.o ./src/a_to_b.o ./src/b_to_a.o ./src/push_swap.o ./src/include/ft_printf/libftprintf.a -o push_swap
+cc -Wall -Wextra -Werror  -c src/include/get_next_line/get_next_line.c -o src/include/get_next_line/get_next_line.o
+cc -Wall -Wextra -Werror  -c src/include/get_next_line/get_next_line_utils.c -o src/include/get_next_line/get_next_line_utils.o
+cc -Wall -Wextra -Werror  ./src/checker.o ./src/helpers.o ./src/table.o ./src/sort_under_fifteen.o ./src/sort.o ./src/linkedlist.o ./src/operation_reverse.o ./src/operation_swap.o ./src/operation_rotate.o ./src/operation_push.o ./src/a_to_b.o ./src/b_to_a.o ./src/push_swap.o ./src/include/get_next_line/get_next_line.o ./src/include/get_next_line/get_next_line_utils.o ./src/include/ft_printf/libftprintf.a -o push_swap
 make: Leaving directory `/Users/wboutzou/Desktop/push_swap_final'
  
