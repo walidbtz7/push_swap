@@ -6,7 +6,7 @@
 /*   By: wboutzou <wboutzou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/29 22:32:09 by wboutzou          #+#    #+#             */
-/*   Updated: 2022/07/03 03:37:19 by wboutzou         ###   ########.fr       */
+/*   Updated: 2022/07/03 23:25:13 by wboutzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,8 @@ int	is_number(char *str)
 	i = 0;
 	if (str[i] == '-' || str[i] == '+')
 		i++;
+	if (!str[i])
+		return (0);
 	while (str[i])
 	{
 		if (str[i] < '0' || str[i] > '9')
@@ -80,10 +82,9 @@ int	checkarg(char **argv, int argc)
 		j = i - 1;
 		if (!is_number(argv[i]))
 			return (0);
-		ft_cosatoi(argv[i]);
 		while (j >= 1)
 		{
-			if (!ft_strcmp(argv[i], argv[j]))
+			if (ft_cosatoi(argv[i]) == ft_cosatoi(argv[j]))
 				return (0);
 			j--;
 		}

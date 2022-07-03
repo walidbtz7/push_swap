@@ -1,7 +1,6 @@
 make --dry-run --keep-going --print-directory
 make: Entering directory `/Users/wboutzou/Desktop/push_swap_final'
-cc -Wall -Wextra -Werror  -c src/include/get_next_line/get_next_line.c -o src/include/get_next_line/get_next_line.o
-cc -Wall -Wextra -Werror  -c src/include/get_next_line/get_next_line_utils.c -o src/include/get_next_line/get_next_line_utils.o
-cc -Wall -Wextra -Werror  ./src/checker.o ./src/helpers.o ./src/table.o ./src/sort_under_fifteen.o ./src/sort.o ./src/linkedlist.o ./src/operation_reverse.o ./src/operation_swap.o ./src/operation_rotate.o ./src/operation_push.o ./src/a_to_b.o ./src/b_to_a.o ./src/push_swap.o ./src/include/get_next_line/get_next_line.o ./src/include/get_next_line/get_next_line_utils.o ./src/include/ft_printf/libftprintf.a -o push_swap
+make: Nothing to be done for `all'.
+ 
 make: Leaving directory `/Users/wboutzou/Desktop/push_swap_final'
  

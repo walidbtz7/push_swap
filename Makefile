@@ -1,4 +1,4 @@
-SRCS    		=  ./src/checker.c ./src/helpers.c ./src/table.c ./src/sort_under_fifteen.c  ./src/sort.c ./src/linkedlist.c ./src/operation_reverse.c ./src/operation_swap.c ./src/operation_rotate.c ./src/operation_push.c ./src/a_to_b.c ./src/b_to_a.c ./src/so_long.c ./src/get_next_line.c
+SRCS    		=  ./src/checker.c ./src/helpers.c ./src/table.c ./src/sort_under_fifteen.c  ./src/sort.c ./src/linkedlist.c ./src/operation_reverse.c ./src/operation_swap.c ./src/operation_rotate.c ./src/operation_push.c ./src/a_to_b.c ./src/b_to_a.c ./src/push_swap.c ./src/get_next_line.c
 
 BONUS_SRCS    		=  ./src/checker.c ./src/helpers.c ./src/table.c ./src/sort_under_fifteen.c  ./src/sort.c ./src/linkedlist.c ./src/operation_reverse.c ./src/operation_swap.c ./src/operation_rotate.c ./src/operation_push.c ./src/a_to_b.c ./src/b_to_a.c ./src/checker_bonus.c ./src/get_next_line.c
 
@@ -39,6 +39,7 @@ $(PRINTF):
 
 clean:
 	@rm -f ${OBJS}
+	@rm -f ${BONUS_OBJS}
 	@make  -C ./src/include/ft_printf clean
 	@make  -C ./src/include/tools clean
 
@@ -46,5 +47,5 @@ fclean:    clean
 	@make  -C ./src/include/ft_printf fclean
 	@make  -C ./src/include/tools fclean
 	@rm -f ${NAME}
-
+	@rm -f ${BONUS}
 re: fclean all

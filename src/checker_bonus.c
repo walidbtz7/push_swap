@@ -6,7 +6,7 @@
 /*   By: wboutzou <wboutzou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/02 23:46:17 by wboutzou          #+#    #+#             */
-/*   Updated: 2022/07/03 04:06:16 by wboutzou         ###   ########.fr       */
+/*   Updated: 2022/07/03 23:28:21 by wboutzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,9 +49,9 @@ int	sortewith(t_node **a, t_node **b, char *str)
 	return (1);
 }
 
-void	result(t_sort *push, t_node *a)
+void	result(t_sort *push, t_node *a, t_node *b)
 {
-	if (!nsorted(push, &a))
+	if (!nsorted(push, &a) && ft_lstsize(b) == 0)
 		ft_printf("OK\n");
 	else
 		ft_printf("KO\n");
@@ -69,7 +69,8 @@ void	readoperation(t_sort *push, t_node **a, t_node **b)
 		}
 		push->str = get_next_line(0);
 	}
-	result(push, *a);
+	free(push->str);
+	result(push, *a, *b);
 }
 
 int	main(int argc, char **argv)
@@ -83,8 +84,7 @@ int	main(int argc, char **argv)
 		if (checkarg(argv, argc))
 		{
 			create_stack(argv, argc, &a);
-			if (!nsorted(&push, &a))
-				return (0);
+			nsorted(&push, &a);
 			readoperation(&push, &a, &b);
 		}
 		else

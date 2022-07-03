@@ -6,7 +6,7 @@
 /*   By: wboutzou <wboutzou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/26 00:32:10 by wboutzou          #+#    #+#             */
-/*   Updated: 2022/07/03 03:31:48 by wboutzou         ###   ########.fr       */
+/*   Updated: 2022/07/03 23:22:28 by wboutzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	readline(char **saver, int *rd, int fd)
 			return (0);
 		}
 		buff[*rd] = '\0';
-		if(!ft_strchr(buff, '\n'))
+		if (!ft_strchr(buff, '\n'))
 			*saver = ft_strjoin(*saver, buff);
 	}
 	free(buff);

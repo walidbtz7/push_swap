@@ -6,26 +6,11 @@
 /*   By: wboutzou <wboutzou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/29 22:47:56 by wboutzou          #+#    #+#             */
-/*   Updated: 2022/07/03 02:13:41 by wboutzou         ###   ########.fr       */
+/*   Updated: 2022/07/03 23:52:01 by wboutzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-
-void	create_stack(char **argv, int argc, t_node **a)
-{
-	int		i;
-	t_node	*tmp;
-
-	i = argc - 1;
-	tmp = NULL;
-	while (i > 0)
-	{
-		create_new_node(ft_cosatoi(argv[i]), &tmp);
-		insert_at_head(a, tmp);
-		i--;
-	}
-}
 
 void	printlist(t_node *head)
 {

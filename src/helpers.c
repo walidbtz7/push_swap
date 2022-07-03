@@ -6,11 +6,26 @@
 /*   By: wboutzou <wboutzou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/29 23:40:50 by wboutzou          #+#    #+#             */
-/*   Updated: 2022/07/02 21:40:12 by wboutzou         ###   ########.fr       */
+/*   Updated: 2022/07/03 23:51:57 by wboutzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+
+void	create_stack(char **argv, int argc, t_node **a)
+{
+	int		i;
+	t_node	*tmp;
+
+	i = argc - 1;
+	tmp = NULL;
+	while (i > 0)
+	{
+		create_new_node(ft_cosatoi(argv[i]), &tmp);
+		insert_at_head(a, tmp);
+		i--;
+	}
+}
 
 void	*ft_memcpy(void *dst, const	void *src, size_t n)
 {
