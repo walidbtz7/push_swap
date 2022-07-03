@@ -1,6 +1,3 @@
 {
-    "files.associations": {
-        "push_swap.h": "c",
-        "ft_printf.h": "c"
-    }
+    "makefile.extensionOutputFolder": "./.vscode"
 }

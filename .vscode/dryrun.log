@@ -1,6 +1,0 @@
-make --dry-run --keep-going --print-directory
-make: Entering directory `/Users/wboutzou/Desktop/push_swap_final'
-make: Nothing to be done for `all'.
- 
-make: Leaving directory `/Users/wboutzou/Desktop/push_swap_final'
- 

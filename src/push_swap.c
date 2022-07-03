@@ -6,7 +6,7 @@
 /*   By: wboutzou <wboutzou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/29 22:25:51 by wboutzou          #+#    #+#             */
-/*   Updated: 2022/07/03 23:30:15 by wboutzou         ###   ########.fr       */
+/*   Updated: 2022/07/04 00:47:04 by wboutzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	main(int argc, char **argv)
 	t_node	*b;
 	t_sort	push;
 
-	if (argc > 2)
+	if (argc >= 2)
 	{
 		a = NULL;
 		b = NULL;
